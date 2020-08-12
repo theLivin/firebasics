@@ -1,0 +1,55 @@
+<html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>FireNotes</title>
+      <link rel="stylesheet" href="style.css" />
+      <link rel="icon" href="./firebase.svg" />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700&display=swap"
+        rel="stylesheet"
+      />
+    </head>
+
+    <body>
+      <h1>
+        <span><img src="./firebase.svg" alt="Firebase Logo" /></span> FireNotes
+      </h1>
+
+      <div class="content">
+        <form id="add-note-form">
+          <input
+            type="text"
+            name="title"
+            id="title"
+            placeholder="Title"
+            autocomplete="off"
+          />
+          <input
+            type="text"
+            name="body"
+            id="body"
+            placeholder="Body"
+            autocomplete="off"
+          />
+          <button type="submit">Add Note</button>
+        </form>
+
+        <ul id="notes"></ul>
+      </div>
+
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+      <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-firestore.js"></script>
+
+      <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+      <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-analytics.js"></script>
+
+      <script src="firebase.js"></script>
+
+      <script src="app.js"></script>
+    </body>
+  </html>
+</html>
